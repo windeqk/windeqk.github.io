@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Windeqk&#39;s site</title>
+    <link>http://windeqk.github.io/posts/</link>
+    <description>Recent content in Posts on Windeqk&#39;s site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pl-PL</language>
+    <lastBuildDate>Sun, 28 Aug 2022 14:03:58 +0200</lastBuildDate><atom:link href="http://windeqk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example Post</title>
+      <link>http://windeqk.github.io/posts/example-post/</link>
+      <pubDate>Sun, 28 Aug 2022 14:03:58 +0200</pubDate>
+      
+      <guid>http://windeqk.github.io/posts/example-post/</guid>
+      <description>This is some content
+stuff exit for </description>
+    </item>
+    
+  </channel>
+</rss>
