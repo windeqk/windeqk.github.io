@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="This is some content
 stuff exit for ">
-<meta name="author" content="">
+<meta name="author" content="Windeqk aka Jacek Frytkownica">
 <link rel="canonical" href="http://windeqk.github.io/posts/example-post/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
@@ -106,6 +106,10 @@ stuff exit for "/>
   "inLanguage": "en",
   "datePublished": "2022-08-28T14:03:58+02:00",
   "dateModified": "2022-08-28T14:03:58+02:00",
+  "author":{
+    "@type": "Person",
+    "name": "Windeqk aka Jacek Frytkownica"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "http://windeqk.github.io/posts/example-post/"
@@ -162,6 +166,16 @@ stuff exit for "/>
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://windeqk.github.io/archive" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://windeqk.github.io/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -169,14 +183,15 @@ stuff exit for "/>
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="http://windeqk.github.io/">Home</a>&nbsp;»&nbsp;<a href="http://windeqk.github.io/posts/">Posts</a></div>
     <h1 class="post-title">
       Example Post
     </h1>
-    <div class="post-meta"><span title='2022-08-28 14:03:58 +0200 CEST'>August 28, 2022</span>
+    <div class="post-meta"><span title='2022-08-28 14:03:58 +0200 CEST'>August 28, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Windeqk aka Jacek Frytkownica
 
 </div>
   </header> 
+
   <div class="post-content"><p>This is some content</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">stuff</span> <span style="color:#a6e22e">exit</span> <span style="color:#66d9ef">for</span>
 </code></pre></div>
@@ -257,6 +272,53 @@ stuff exit for "/>
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

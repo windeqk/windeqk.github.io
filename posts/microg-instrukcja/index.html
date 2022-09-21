@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Microg Instrukcja | Windeqk&#39;s site</title>
+<meta name="keywords" content="">
+<meta name="description" content="JMT na zawsze w serduszku ^-^">
+<meta name="author" content="Piotr Góral, redakcja i nieco smaczków - Windeqk">
+<link rel="canonical" href="http://windeqk.github.io/posts/microg-instrukcja/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://windeqk.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://windeqk.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://windeqk.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://windeqk.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="http://windeqk.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Microg Instrukcja" />
+<meta property="og:description" content="JMT na zawsze w serduszku ^-^" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://windeqk.github.io/posts/microg-instrukcja/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-21T22:55:59&#43;02:00" />
+<meta property="article:modified_time" content="2022-09-21T22:55:59&#43;02:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Microg Instrukcja"/>
+<meta name="twitter:description" content="JMT na zawsze w serduszku ^-^"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://windeqk.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Microg Instrukcja",
+      "item": "http://windeqk.github.io/posts/microg-instrukcja/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Microg Instrukcja",
+  "name": "Microg Instrukcja",
+  "description": "JMT na zawsze w serduszku ^-^",
+  "keywords": [
+    
+  ],
+  "articleBody": "MicroG i Aurora w praktyce - czyli zjeść ciastko i mieć ciastko Preambuła Nie ulega wątpliwości, że preinstalowane na większości smartfonów z androidem “Usługi Google” (dalej dla uproszczenia nazywane GMS - Google Mobile Services) stanowią często najważniejszy element smartfonowego ekosystemu. Pozwalają w pełni korzystać z googlowskich rozwiązań, płacić zbliżeniowo poprzez gpay (czy tam portfel google), pobierać aplikacje, synchronizować nasze kontakty, logować się w wielu miejscach. Można powiedzieć, że ich brak w praktyce dla wielu osób będzie nie do przeskoczenia.\nHuawei, który ze względów politycznych musiał się z nimi pożegnać zaczął pracować nad autorską alternatywą w postaci HMS (Huawei Mobile Serwices). O tym jak to działa i czy działa nie będę się rozwodził, bo Paweł Fidut zrobił to już za mnie, we wszystkich znaczeniach tych słów.\nPo co to komu? - Arenga Wracając do meritum… GMS pozwala nam w pełni wykorzystać potencjał urządzenia oraz daje dostęp do wielu udogodnień, jednocześnie będąc po prostu data farmą - oczywistym jest, że jeśli coś jest za darmo, to TY jesteś produktem.\nNie jest to ani dziwne, ani niespotykane, ani szczególnie uciążliwe dla użytkownika. Część osób tak jak ja, może sobie jednak zadać pytanie: Czy istnieje możliwość chociaż częściowej anonimizacji? Bez odcinania się od dobrodziejstw GMS oczywiście.\nTego typu alternatywę stanowi MicroG, nazwa którą mogą kojarzyć użytkownicy tej lepszej aplikacji youtube. MicroG to otwartoźródłowa implementacja GMS, która stara się robić to co oryginał, ale bez balastu. Dajemy mniej od siebie, telefon dłużej trzyma na baterii. Minusy? Niestety nie wszystko działa, należy zapomnieć o gpayu (choć na przykładzie ING wiem, że HCE śmiga), RCSach w aplikacji wiadomości, czy opcji weryfikowania logowania przy pomocy cyferek.\nCzy to rozwiązanie dla każdego? Zdecydowanie nie! Opiszę tutaj dość szczegółowo metodę instalacji, konfiguracji oraz założenia podstawowe z jakich wychodzę. Przedstawiona metoda nie jest jedyną (słuszną), nie obiecuję, że na waszej konfiguracji wszystko zadziała od kopa.\nWłaściwa instrukcja Co będzie nam potrzebne:  Na dobry początek, custom rom w wersji vanilla z obsługą out of the box “spoofing signature”. Z bardziej mainstreamowych funkcjonalność taką oferuje ArrowOS i to na nim oparłem ten tekst. Czy brak tej funkcjonalności jest nie do przeskoczenia? Nie, istnieją metody implementacji tej funkcji zewnętrznie, jednak nie zamierzam tutaj opisywać wszystkich scenariuszy. Działający Magisk (Zygisk) oraz wiedza z zakresu instalacji rozszerzeń(modułów), ukrywania obecności dla kluczowych aplikacji (SafetyNet passed starter pack)  Więc do dzieła:  Instalujemy moduł microG Installer Revived.  Dodatkowo z szczerego serca mogę polecić aplikację FoxMagiskModuleManager która pozwala wyszukiwać i instalować moduły bez pobierania ich przez przeglądarkę i szukania w zipów w pamięci urządzenia.\nPierwszy moduł zawiera wszystkie niezbędne składowe MicroG, które są potrzebne do działania. FakeStore (jedna z nich) ma za zadanie dać pozytywny feedback aplikacji sprawdzającej, czy na urządzeniu zainstalowany jest Sklep Play. Niektóre aplikacje posiadają jednak bardziej zaawansowany mechanizm (w moim przypadku jest to McDonald) i takie rozwiązanie nie zapewni oczekiwanych rezultatów. W takim przypadku możliwa jest instalacja spatchowanej wersji Sklepu (Phonesky), która współpracuje z MicroG (patrz podpunkt 1a).\na) By w trakcie instalacji FakeStore został zastąpiony przez Phonesky w folderze /data/adb musimy umieścić odpowiedni plik apk kliknij aby go pobrać nazwany po prostu Phonesky.apk. Krok ten musi zostać wykonany przed instalacją modułu z punktu 1, w innym przypadku zostanie zainstalowany FakeStore. Z tej metody skorzystałem ja.\nKonfiguracja MicroG: W aplikacji Ustawienia MicroG dodajemy swoje konto google. Jeśli posiadacie weryfikacje dwuetapową opartą o cyferki i brak drugiego telefonu pod ręką, będziecie musieli skorzystać z opcji na przykład SMS. To w sumie najważniejszy punkt. Posiadamy teraz podpięte własne konto.\nW zakładce GoogleSafetyNet możemy sprawdzić czy przechodzimy weryfikację. U mnie przy wrzuceniu wszystkiego co jest związane z google w denylist, instalacji safetynet-fixa od kdrag0na oraz zmianie nazwy pakietu magiska wszystko jest w najlepszym porządku.\nBy wszystkie rzeczy związane z lokalizacją w aplikacjach działały w 100% musimy zapewnić dostęp do jakiegoś dostawcy usług. W moim przypadku zdecydowałem się na implementację Mozilla Location Services. Po instalacji apk w zakładce LocationModules włączamy ten moduł i udzielamy pełnego dostępu do lokalizacji.\nZarówno microG Services Core/Usługi microG jak i Play Store/Sklep Play powinny mieć uprawnienia do fałszowania podpisów. W moim przypadku na ArrowOS nie musiałem tego pilnować - takowe zostały nadane automatycznie przy instalacji. Gdyby jednak tak nie było, można je nadać/odwołać ręcznie z poziomu aplikacji ustawień. O tym, czy wymagane uprawnienia są nadane możemy się dowiedzieć z zakładki Self-Check/Samo-Sprawdzenie\nAurora Store Teoretycznie jeśli pokusiliście się o instalację Phonesky tutaj moglibyście skończyć czytać. Jednak tak czy siak to tylko spatchowany Sklep Play, czyli z punktu widzenia tego tekstu bloatware (a raczej zło konieczne). Jeśli jednak wasze ambicje sięgają troszkę dalej, albo zdecydowaliście się na instalację FakeStore, potrzebować będziecie jakiegoś klienta, który obsłuży instalację aplikacji. W tej roli wystąpi AuroraStore - nieoficjalny otwartoźródłowy klient Sklepu Play.\nPobieramy Aurorę z oficjalnej strony i instalujemy. W trakcie pierwszego uruchomienia zapyta nas o instalator. Wybieramy opcję “root installer”. Dzięki temu aplikacje instalowane przez Aurorę będą identyfikowały się jak instalowane z Sklepu Play (dzięki obecności FakeStore/Phonesky). W kolejnych krokach udzielamy Aurorze wszystkich niezbędnych uprawnień.\nTo co ciekawe pojawia się w ostatnim etapie. Aurora daje nam do wyboru z jakiego konta chcemy się zalogować. Jeśli nie posiacie/nie używacie płatnych aplikacji przypisanych do własnego konta google warto użyć opcji anonimowe. W ten sposób aplikacje pobierane są przez zupełnie niezwiązane z nami konto, co jeszcze bardziej nas anonimizuje. Oczywiście nic nie stoi na przeszkodzie by użyć własnego konta, należy mieć jednak na uwadze, że istnieje możliwość zbanowania. Wybór należy do was.\nZ ciekawszych rzeczy warto nadmienić, że Aurora zintegrowała w aplikacji usługę Exodus Privacy, przy jej pomocy można zobaczyć z jakich trackerów korzysta konkretna aplikacja.\nWszystko co jest związane z MicroG/Sklepem Play warto dodać do czarnej listy.. Zainstalowane rozwiązania korzystają z nazw pakietów oryginalnych dla GMS, które mogą zostać nadpisane na drodze aktualizacji w momencie wydania nowej wersji przez Google.\nMcDonald’s - prawdziwy Fort Knox Jeśli zdecydowaliście się na instalację Phonesky mam dobrą informację. Zrobimy tak, żeby aplikacja maka działała. Po prostu pobieramy ją z Aurory, pamiętając, by przed pierwszym uruchomieniem dodać ją do denylist. Logujemy się do aplikacji.\nPo pierwszym udanym zalogowaniu możemy wyłączyć aplikację “Sklep Play” z poziomu ustawień. Czy to zadziała w przypadku każdej aplikacji tego typu? Zapewne nie, ale mi problemy sprawiał tylko i wyłącznie mak.\nPoza tą jedną z aplikacji w zupełności wystarczyłby mi set oparty o FakeStore. Druga sprawa to fakt, że nie widzę sensu trzymania Phonesky na dłuższą metę włączonego w przypadku tego typu konfiguracji. Raz, że trochę zaprzecza idei z którą powstał ten tekst, dwa, że w dużej mierze jego kompetencje zazębiają się z Aurorą. Dlatego podjąłem decyzję o wyłączeniu.\n",
+  "wordCount" : "1076",
+  "inLanguage": "en",
+  "datePublished": "2022-09-21T22:55:59+02:00",
+  "dateModified": "2022-09-21T22:55:59+02:00",
+  "author":{
+    "@type": "Person",
+    "name": "Piotr Góral, redakcja i nieco smaczków - Windeqk"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://windeqk.github.io/posts/microg-instrukcja/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Windeqk's site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://windeqk.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://windeqk.github.io/" accesskey="h" title="Windeqk&#39;s site (Alt + H)">Windeqk&#39;s site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://windeqk.github.io/archive" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://windeqk.github.io/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://windeqk.github.io/">Home</a>&nbsp;»&nbsp;<a href="http://windeqk.github.io/posts/">Posts</a></div>
+    <h1 class="post-title">
+      Microg Instrukcja<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h1>
+    <div class="post-description">
+      JMT na zawsze w serduszku ^-^
+    </div>
+    <div class="post-meta"><span title='2022-09-21 22:55:59 +0200 CEST'>September 21, 2022</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Piotr Góral, redakcja i nieco smaczków - Windeqk
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#microg-i-aurora-w-praktyce---czyli-zje%c5%9b%c4%87-ciastko-i-mie%c4%87-ciastko" aria-label="MicroG i Aurora w praktyce - czyli zjeść ciastko i mieć ciastko">MicroG i Aurora w praktyce - czyli zjeść ciastko i mieć ciastko</a><ul>
+                        
+                <li>
+                    <a href="#preambu%c5%82a" aria-label="Preambuła">Preambuła</a></li>
+                <li>
+                    <a href="#po-co-to-komu---arenga" aria-label="Po co to komu? - Arenga">Po co to komu? - Arenga</a></li>
+                <li>
+                    <a href="#w%c5%82a%c5%9bciwa-instrukcja" aria-label="Właściwa instrukcja">Właściwa instrukcja</a><ul>
+                        
+                <li>
+                    <a href="#co-b%c4%99dzie-nam-potrzebne" aria-label="Co będzie nam potrzebne:">Co będzie nam potrzebne:</a></li>
+                <li>
+                    <a href="#wi%c4%99c-do-dzie%c5%82a" aria-label="Więc do dzieła:">Więc do dzieła:</a></li>
+                <li>
+                    <a href="#konfiguracja-microg" aria-label="Konfiguracja MicroG:">Konfiguracja MicroG:</a></li>
+                <li>
+                    <a href="#aurora-store" aria-label="Aurora Store">Aurora Store</a></li>
+                <li>
+                    <a href="#mcdonalds---prawdziwy-fort-knox" aria-label="McDonald’s - prawdziwy Fort Knox">McDonald’s - prawdziwy Fort Knox</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="microg-i-aurora-w-praktyce---czyli-zjeść-ciastko-i-mieć-ciastko">MicroG i Aurora w praktyce - czyli zjeść ciastko i mieć ciastko<a hidden class="anchor" aria-hidden="true" href="#microg-i-aurora-w-praktyce---czyli-zjeść-ciastko-i-mieć-ciastko">#</a></h1>
+<h2 id="preambuła">Preambuła<a hidden class="anchor" aria-hidden="true" href="#preambuła">#</a></h2>
+<p>Nie ulega wątpliwości, że preinstalowane na większości smartfonów z androidem “Usługi Google” (dalej dla uproszczenia nazywane GMS - Google Mobile Services) stanowią często najważniejszy element smartfonowego ekosystemu. Pozwalają w pełni korzystać z googlowskich rozwiązań, płacić zbliżeniowo poprzez gpay (czy tam portfel google), pobierać aplikacje, synchronizować nasze kontakty, logować się w wielu miejscach. Można powiedzieć, że ich brak w praktyce dla wielu osób będzie nie do przeskoczenia.</p>
+<p>Huawei, który ze względów politycznych musiał się z nimi pożegnać zaczął pracować nad autorską alternatywą w postaci HMS (Huawei Mobile Serwices). O tym jak to działa i czy działa nie będę się rozwodził, bo <a href="https://www.facebook.com/groups/telefonawka/posts/3339529096270756">Paweł Fidut zrobił to już za mnie</a>, we wszystkich znaczeniach tych słów.</p>
+<h2 id="po-co-to-komu---arenga">Po co to komu? - Arenga<a hidden class="anchor" aria-hidden="true" href="#po-co-to-komu---arenga">#</a></h2>
+<p>Wracając do meritum&hellip; GMS pozwala nam w pełni wykorzystać potencjał urządzenia oraz daje dostęp do wielu udogodnień, jednocześnie będąc po prostu data farmą - oczywistym jest, że jeśli coś jest za darmo, to TY jesteś produktem.</p>
+<p>Nie jest to ani dziwne, ani niespotykane, ani szczególnie uciążliwe dla użytkownika. Część osób tak jak ja, może sobie jednak zadać pytanie: <em>Czy istnieje możliwość chociaż częściowej anonimizacji?</em> Bez odcinania się od dobrodziejstw GMS oczywiście.</p>
+<p>Tego typu alternatywę stanowi MicroG, nazwa którą mogą kojarzyć użytkownicy tej lepszej aplikacji youtube. MicroG to otwartoźródłowa implementacja GMS, która stara się robić to co oryginał, ale bez balastu. Dajemy mniej od siebie, telefon dłużej trzyma na baterii. Minusy? Niestety nie wszystko działa, należy zapomnieć o gpayu (choć na przykładzie ING wiem, że HCE śmiga), RCSach w aplikacji wiadomości, czy opcji weryfikowania logowania przy pomocy cyferek.</p>
+<p><em>Czy to rozwiązanie dla każdego?</em> Zdecydowanie <strong>nie!</strong> Opiszę tutaj dość szczegółowo metodę instalacji, konfiguracji oraz założenia podstawowe z jakich wychodzę. Przedstawiona metoda nie jest jedyną (słuszną), nie obiecuję, że na waszej konfiguracji wszystko zadziała od kopa.</p>
+<h2 id="właściwa-instrukcja">Właściwa instrukcja<a hidden class="anchor" aria-hidden="true" href="#właściwa-instrukcja">#</a></h2>
+<h3 id="co-będzie-nam-potrzebne">Co będzie nam potrzebne:<a hidden class="anchor" aria-hidden="true" href="#co-będzie-nam-potrzebne">#</a></h3>
+<ul>
+<li>Na dobry początek, custom rom w wersji vanilla z obsługą out of the box “spoofing signature”. Z bardziej mainstreamowych funkcjonalność taką oferuje ArrowOS i to na nim oparłem ten tekst.
+Czy brak tej funkcjonalności jest nie do przeskoczenia? Nie, istnieją metody implementacji tej funkcji zewnętrznie, jednak nie zamierzam tutaj opisywać wszystkich scenariuszy.</li>
+<li>Działający Magisk (Zygisk) oraz wiedza z zakresu instalacji rozszerzeń(modułów), ukrywania obecności dla kluczowych aplikacji (SafetyNet passed starter pack)</li>
+</ul>
+<h3 id="więc-do-dzieła">Więc do dzieła:<a hidden class="anchor" aria-hidden="true" href="#więc-do-dzieła">#</a></h3>
+<ol>
+<li>Instalujemy moduł <strong><a href="https://github.com/nift4/microg_installer_revived">microG Installer Revived</a></strong>.</li>
+</ol>
+<p>Dodatkowo z szczerego serca mogę polecić aplikację <strong><a href="https://github.com/Fox2Code/FoxMagiskModuleManager">FoxMagiskModuleManager</a></strong> która pozwala wyszukiwać i instalować moduły bez pobierania ich przez przeglądarkę i szukania w zipów w pamięci urządzenia.</p>
+<p>Pierwszy moduł zawiera wszystkie niezbędne składowe MicroG, które są potrzebne do działania. FakeStore (jedna z nich) ma za zadanie dać pozytywny feedback aplikacji sprawdzającej, czy na urządzeniu zainstalowany jest Sklep Play. Niektóre aplikacje posiadają jednak bardziej zaawansowany mechanizm (w moim przypadku jest to McDonald) i takie rozwiązanie nie zapewni oczekiwanych rezultatów. W takim przypadku możliwa jest instalacja spatchowanej wersji Sklepu (Phonesky), która współpracuje z MicroG (patrz podpunkt 1a).</p>
+<p>a) By w trakcie instalacji FakeStore został zastąpiony przez Phonesky w folderze <em>/data/adb musimy</em> umieścić odpowiedni plik apk <strong><a href="https://nanolx.org/fdroid/repo/Phonesky_132.apk">kliknij aby go pobrać</a></strong> nazwany po prostu <code>Phonesky.apk</code>. Krok ten musi zostać wykonany przed instalacją modułu z punktu 1, w innym przypadku zostanie zainstalowany FakeStore. Z tej metody skorzystałem ja.</p>
+<h3 id="konfiguracja-microg">Konfiguracja MicroG:<a hidden class="anchor" aria-hidden="true" href="#konfiguracja-microg">#</a></h3>
+<p>W aplikacji Ustawienia MicroG dodajemy swoje konto google. Jeśli posiadacie weryfikacje dwuetapową opartą o cyferki i brak drugiego telefonu pod ręką, będziecie musieli skorzystać z opcji na przykład SMS. To w sumie najważniejszy punkt. Posiadamy teraz podpięte własne konto.</p>
+<p>W zakładce GoogleSafetyNet możemy sprawdzić czy przechodzimy weryfikację. U mnie przy wrzuceniu wszystkiego co jest związane z google w denylist, instalacji <a href="https://github.com/kdrag0n/safetynet-fix">safetynet-fixa od kdrag0na</a> oraz zmianie nazwy pakietu magiska wszystko jest w najlepszym porządku.</p>
+<p>By wszystkie rzeczy związane z lokalizacją w aplikacjach działały w 100% musimy zapewnić dostęp do jakiegoś dostawcy usług. W moim przypadku zdecydowałem się na <a href="https://github.com/microg/IchnaeaNlpBackend">implementację Mozilla Location Services</a>. Po instalacji apk w zakładce LocationModules włączamy ten moduł i udzielamy pełnego dostępu do lokalizacji.</p>
+<p>Zarówno microG Services Core/Usługi microG jak i Play Store/Sklep Play powinny mieć uprawnienia do fałszowania podpisów. W moim przypadku na ArrowOS nie musiałem tego pilnować - takowe zostały nadane automatycznie przy instalacji. Gdyby jednak tak nie było, można je nadać/odwołać ręcznie z poziomu aplikacji ustawień. O tym, czy wymagane uprawnienia są nadane możemy się dowiedzieć z zakładki Self-Check/Samo-Sprawdzenie</p>
+<h3 id="aurora-store">Aurora Store<a hidden class="anchor" aria-hidden="true" href="#aurora-store">#</a></h3>
+<p>Teoretycznie jeśli pokusiliście się o instalację Phonesky tutaj moglibyście skończyć czytać. Jednak tak czy siak to tylko spatchowany Sklep Play, czyli z punktu widzenia tego tekstu bloatware (a raczej zło konieczne). Jeśli jednak wasze ambicje sięgają troszkę dalej, albo zdecydowaliście się na instalację FakeStore, potrzebować będziecie jakiegoś klienta, który obsłuży instalację aplikacji. W tej roli wystąpi AuroraStore - nieoficjalny otwartoźródłowy klient Sklepu Play.</p>
+<p><strong><a href="http://auroraoss.com">Pobieramy Aurorę z oficjalnej strony</a></strong> i instalujemy. W trakcie pierwszego uruchomienia zapyta nas o instalator. Wybieramy opcję “root installer”. Dzięki temu aplikacje instalowane przez Aurorę będą identyfikowały się jak instalowane z Sklepu Play (dzięki obecności FakeStore/Phonesky). W kolejnych krokach udzielamy Aurorze wszystkich niezbędnych uprawnień.</p>
+<p>To co ciekawe pojawia się w ostatnim etapie. Aurora daje nam do wyboru z jakiego konta chcemy się zalogować. Jeśli nie posiacie/nie używacie płatnych aplikacji przypisanych do własnego konta google warto użyć opcji anonimowe. W ten sposób aplikacje pobierane są przez zupełnie niezwiązane z nami konto, co jeszcze bardziej nas anonimizuje. Oczywiście nic nie stoi na przeszkodzie by użyć własnego konta, należy mieć jednak na uwadze, że istnieje możliwość zbanowania. Wybór należy do was.</p>
+<p>Z ciekawszych rzeczy warto nadmienić, że Aurora zintegrowała w aplikacji usługę Exodus Privacy, przy jej pomocy można zobaczyć z jakich trackerów korzysta konkretna aplikacja.</p>
+<p><em>Wszystko co jest związane z MicroG/Sklepem Play warto dodać do czarnej listy.. Zainstalowane rozwiązania korzystają z nazw pakietów oryginalnych dla GMS, które mogą zostać nadpisane na drodze aktualizacji w momencie wydania nowej wersji przez Google.</em></p>
+<h3 id="mcdonalds---prawdziwy-fort-knox">McDonald’s - prawdziwy Fort Knox<a hidden class="anchor" aria-hidden="true" href="#mcdonalds---prawdziwy-fort-knox">#</a></h3>
+<p>Jeśli zdecydowaliście się na instalację Phonesky mam dobrą informację. Zrobimy tak, żeby aplikacja maka działała. Po prostu pobieramy ją z Aurory, pamiętając, by przed pierwszym uruchomieniem dodać ją do denylist. Logujemy się do aplikacji.</p>
+<p>Po pierwszym udanym zalogowaniu możemy wyłączyć aplikację “Sklep Play” z poziomu ustawień. Czy to zadziała w przypadku każdej aplikacji tego typu? Zapewne nie, ale mi problemy sprawiał tylko i wyłącznie mak.</p>
+<p>Poza tą jedną z aplikacji w zupełności wystarczyłby mi set oparty o FakeStore. Druga sprawa to fakt, że nie widzę sensu trzymania Phonesky na dłuższą metę włączonego w przypadku tego typu konfiguracji. Raz, że trochę zaprzecza idei z którą powstał ten tekst, dwa, że w dużej mierze jego kompetencje zazębiają się z Aurorą. Dlatego podjąłem decyzję o wyłączeniu.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="http://windeqk.github.io/">Windeqk&#39;s site</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
