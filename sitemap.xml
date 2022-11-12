@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://windeqk.github.io/posts/microg-instrukcja/</loc>
-    <lastmod>2022-09-21T22:55:59+02:00</lastmod>
+    <loc>http://windeqk.github.io/posts/building-tequilaos/</loc>
+    <lastmod>2022-11-09T13:11:23+01:00</lastmod>
   </url><url>
     <loc>http://windeqk.github.io/posts/</loc>
-    <lastmod>2022-09-21T22:55:59+02:00</lastmod>
+    <lastmod>2022-11-09T13:11:23+01:00</lastmod>
   </url><url>
     <loc>http://windeqk.github.io/</loc>
+    <lastmod>2022-11-09T13:11:23+01:00</lastmod>
+  </url><url>
+    <loc>http://windeqk.github.io/posts/microg-instrukcja/</loc>
     <lastmod>2022-09-21T22:55:59+02:00</lastmod>
   </url><url>
     <loc>http://windeqk.github.io/posts/example-post/</loc>

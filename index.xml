@@ -5,7 +5,19 @@
     <link>http://windeqk.github.io/</link>
     <description>Recent content on Windeqk&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Sep 2022 22:55:59 +0200</lastBuildDate><atom:link href="http://windeqk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Nov 2022 13:11:23 +0100</lastBuildDate><atom:link href="http://windeqk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building tequilaOS</title>
+      <link>http://windeqk.github.io/posts/building-tequilaos/</link>
+      <pubDate>Wed, 09 Nov 2022 13:11:23 +0100</pubDate>
+      
+      <guid>http://windeqk.github.io/posts/building-tequilaos/</guid>
+      <description>Today I will show you how to build tequilaOS 🆒 First Initializing the tequilaOS repo and downloading the manifest repo init -u https://github.com/tequilaOS/platform_manifest.git -b tobacco If you want to download only last commit add --depth=1
+Sync code aka download meh way
+repo sync cool way #faster and better
+repo sync build/make vendor/tequila &amp;amp;&amp;amp; source build/envsetup.sh &amp;amp;&amp;amp; reposync Buil[t/d]ing # Set up environment . build/envsetup.sh # Choose a target lunch tequila_$device-user # userdebug is for losers # Build the code mka bacon Proper docs This is no junk rom with a stick up its ass.</description>
+    </item>
+    
     <item>
       <title>Microg Instrukcja</title>
       <link>http://windeqk.github.io/posts/microg-instrukcja/</link>
