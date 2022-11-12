@@ -12,10 +12,9 @@
       <pubDate>Wed, 09 Nov 2022 13:11:23 +0100</pubDate>
       
       <guid>http://windeqk.github.io/posts/building-tequilaos/</guid>
-      <description>Today I will show you how to build tequilaOS 🆒 First Initializing the tequilaOS repo and downloading the manifest repo init -u https://github.com/tequilaOS/platform_manifest.git -b tobacco If you want to download only last commit add --depth=1
-Sync code aka download meh way
-repo sync cool way #faster and better
-repo sync build/make vendor/tequila &amp;amp;&amp;amp; source build/envsetup.sh &amp;amp;&amp;amp; reposync Buil[t/d]ing # Set up environment . build/envsetup.sh # Choose a target lunch tequila_$device-user # userdebug is for losers # Build the code mka bacon Proper docs This is no junk rom with a stick up its ass.</description>
+      <description>Today I will show you how to build tequilaOS 🆒 First Initializing the tequilaOS repo and downloading the manifest repo init -u https://github.com/tequilaOS/platform_manifest.git -b tobacco If you want to initialize source as a shallow clone (means including only latest commit in every repository), add &amp;ndash;depth=1 flag to the above command.
+ This will save a lot of space
+ Sync code aka download meh way repo sync cool way faster and better repo sync build/make vendor/tequila &amp;amp;&amp;amp; source build/envsetup.</description>
     </item>
     
     <item>
