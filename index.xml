@@ -1,41 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Windeqk&#39;s site</title>
-    <link>http://windeqk.github.io/</link>
-    <description>Recent content on Windeqk&#39;s site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 09 Nov 2022 13:11:23 +0100</lastBuildDate><atom:link href="http://windeqk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <title>Windeqk&#39;s blog</title>
+    <link>https://windeqk.github.io/</link>
+    <description>Recent content on Windeqk&#39;s blog</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 09 Nov 2022 13:11:23 +0100</lastBuildDate>
+    <atom:link href="https://windeqk.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building tequilaOS</title>
-      <link>http://windeqk.github.io/posts/building-tequilaos/</link>
+      <link>https://windeqk.github.io/posts/building-tequilaos/</link>
       <pubDate>Wed, 09 Nov 2022 13:11:23 +0100</pubDate>
-      
-      <guid>http://windeqk.github.io/posts/building-tequilaos/</guid>
-      <description>Today I will show you how to build tequilaOS 🆒 First Initializing the tequilaOS repo and downloading the manifest repo init -u https://github.com/tequilaOS/platform_manifest.git -b tortilla If you want to initialize source as a shallow clone (means including only latest commit in every repository), add --depth=1 flag to the above command.
- This will save a lot of space
- Sync code aka download meh way repo sync cool way faster and better repo sync build/make vendor/tequila &amp;amp;&amp;amp; source build/envsetup.</description>
+      <guid>https://windeqk.github.io/posts/building-tequilaos/</guid>
+      <description>&lt;h1 id=&#34;today-i-will-show-you-how-to-build-tequilaos-&#34;&gt;Today I will show you how to build tequilaOS 🆒&lt;/h1&gt;
+&lt;h2 id=&#34;first&#34;&gt;First&lt;/h2&gt;
+&lt;h3 id=&#34;initializing-the-tequilaos-repo-and-downloading-the-manifest&#34;&gt;Initializing the tequilaOS repo and downloading the manifest&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;repo init -u https://github.com/tequilaOS/platform_manifest.git -b tortilla
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you want to initialize source as a shallow clone (means including only latest commit in every repository), add &lt;code&gt;--depth=1&lt;/code&gt; flag to the above command.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This will save a lot of space&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;sync-code-aka-download&#34;&gt;Sync code aka download&lt;/h3&gt;
+&lt;h4 id=&#34;meh-way&#34;&gt;&lt;code&gt;meh way&lt;/code&gt;&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;repo sync
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;cool-way-faster-and-better&#34;&gt;&lt;code&gt;cool way&lt;/code&gt; faster and better&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;repo sync build/make vendor/tequila &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; source build/envsetup.sh &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; reposync
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;buildting&#34;&gt;Buil[d/t]ing&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Set up environment&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;. build/envsetup.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Choose a target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lunch tequila_$device-$variant &lt;span style=&#34;color:#75715e&#34;&gt;# $variant - either user, userdebug or eng&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Build the code&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mka bacon
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;proper-docs&#34;&gt;Proper docs&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you are looking for some special toggles or commands&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Microg Instrukcja</title>
-      <link>http://windeqk.github.io/posts/microg-instrukcja/</link>
+      <link>https://windeqk.github.io/posts/microg-instrukcja/</link>
       <pubDate>Wed, 21 Sep 2022 22:55:59 +0200</pubDate>
-      
-      <guid>http://windeqk.github.io/posts/microg-instrukcja/</guid>
+      <guid>https://windeqk.github.io/posts/microg-instrukcja/</guid>
       <description>JMT na zawsze w serduszku ^-^</description>
     </item>
-    
-    <item>
-      <title>Example Post</title>
-      <link>http://windeqk.github.io/posts/example-post/</link>
-      <pubDate>Sun, 28 Aug 2022 14:03:58 +0200</pubDate>
-      
-      <guid>http://windeqk.github.io/posts/example-post/</guid>
-      <description>Enter hir custom description</description>
-    </item>
-    
-    
-    
   </channel>
 </rss>

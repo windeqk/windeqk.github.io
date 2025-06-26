@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Polish on Windeqk&#39;s blog</title>
+    <link>https://windeqk.github.io/tags/polish/</link>
+    <description>Recent content in Polish on Windeqk&#39;s blog</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 21 Sep 2022 22:55:59 +0200</lastBuildDate>
+    <atom:link href="https://windeqk.github.io/tags/polish/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microg Instrukcja</title>
+      <link>https://windeqk.github.io/posts/microg-instrukcja/</link>
+      <pubDate>Wed, 21 Sep 2022 22:55:59 +0200</pubDate>
+      <guid>https://windeqk.github.io/posts/microg-instrukcja/</guid>
+      <description>JMT na zawsze w serduszku ^-^</description>
+    </item>
+  </channel>
+</rss>

@@ -2,27 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://windeqk.github.io/posts/building-tequilaos/</loc>
+    <loc>https://windeqk.github.io/posts/</loc>
+    <lastmod>2025-06-24T11:53:52+00:00</lastmod>
+  </url><url>
+    <loc>https://windeqk.github.io/</loc>
+    <lastmod>2025-06-24T11:53:52+00:00</lastmod>
+  </url><url>
+    <loc>https://windeqk.github.io/posts/building-tequilaos/</loc>
     <lastmod>2022-11-09T13:11:23+01:00</lastmod>
   </url><url>
-    <loc>http://windeqk.github.io/posts/</loc>
-    <lastmod>2022-11-09T13:11:23+01:00</lastmod>
-  </url><url>
-    <loc>http://windeqk.github.io/</loc>
-    <lastmod>2022-11-09T13:11:23+01:00</lastmod>
-  </url><url>
-    <loc>http://windeqk.github.io/posts/microg-instrukcja/</loc>
+    <loc>https://windeqk.github.io/tags/microg/</loc>
     <lastmod>2022-09-21T22:55:59+02:00</lastmod>
   </url><url>
-    <loc>http://windeqk.github.io/posts/example-post/</loc>
-    <lastmod>2022-08-28T14:03:58+02:00</lastmod>
+    <loc>https://windeqk.github.io/posts/microg-instrukcja/</loc>
+    <lastmod>2022-09-21T22:55:59+02:00</lastmod>
   </url><url>
-    <loc>http://windeqk.github.io/archive/</loc>
+    <loc>https://windeqk.github.io/tags/polish/</loc>
+    <lastmod>2022-09-21T22:55:59+02:00</lastmod>
   </url><url>
-    <loc>http://windeqk.github.io/categories/</loc>
+    <loc>https://windeqk.github.io/tags/</loc>
+    <lastmod>2022-09-21T22:55:59+02:00</lastmod>
   </url><url>
-    <loc>http://windeqk.github.io/search/</loc>
+    <loc>https://windeqk.github.io/categories/</loc>
   </url><url>
-    <loc>http://windeqk.github.io/tags/</loc>
+    <loc>https://windeqk.github.io/search/</loc>
   </url>
 </urlset>
