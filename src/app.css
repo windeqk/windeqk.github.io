@@ -135,3 +135,20 @@
     --m3-scheme-on-error-container-subtle: 255 135 150;
   }
 }
+
+body {
+  background-color: rgb(var(--m3-scheme-background));
+  color: rgb(var(--m3-scheme-on-background));
+}
+
+:not(button) > a {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  transition-timing-function: var(--default-transition-timing-function);
+  transition-duration: var(--default-transition-duration);
+}
+
+:not(button) > a:hover,
+:not(button) > a:active {
+  text-decoration-color: transparent;
+}
